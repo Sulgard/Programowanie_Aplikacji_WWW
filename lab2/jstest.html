@@ -16,7 +16,8 @@
             <li><a href="kroki.html">Pierwsze Kroki</a></li>
             <li><a href="fabuła.html">Misje</a></li>
             <li><a href="kontakt.html">Kontakt</a></li>
-            <li><a href="jstest.html">JavaScript</a></li>
+            <li><a href="jstest.html">testJs</a></li>
+            <li><a href="jstest2.html">testJS2</a></li>
         </ul>
         
         <FORM method="POST" NAME="background">
@@ -25,10 +26,21 @@
             <input type="button" value="bialy" onclick="changeBackground('#FFFFFF')">
             <input type="button" value="zielony" onclick="changeBackground('#00FF00')">
             <input type="button" value="niebieski" onclick="changeBackground('#0000FF')">
-            <input type="button" value="pomaranczowy" onclick="changeBackground('FF8000')">
+            <input type="button" value="pomaranczowy" onclick="changeBackground('#FF8000')">
             <input type="button" value="szary" onclick="changeBackground('#c0c0c0')">
-            <input type="button" value="czerwony" onclick="changeBackground('FF0000')">
+            <input type="button" value="czerwony" onclick="changeBackground('#FF0000')">
         
         </FORM>
+
+        <form method="POST" Name="OpenWindow">
+            <input type="button" value="Open" onclick="openVothcom()">
+        </form>
+
+        <form name="myForm">
+            First name: <input type="value" id="cos" name="fname"><br> 
+        </form>
+        <form method="POST" name="form">
+        <input type="button" value="Reset form" onclick="clear('myForm')">
+        </form>
     </body>
 </html>

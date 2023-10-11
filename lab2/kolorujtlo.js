@@ -27,7 +27,7 @@ function openVothcom()
     window.open("","Display window","toolbar=no,directories=no,menubar=no");
 }
 
-function clear (form)
+function clear ()
 {
     form.input.value = 0;
     form.display.value = 0;
@@ -36,5 +36,5 @@ function clear (form)
 
 function changeBackground(hexNumber)
 {
-    document.bgColor = hexNumber;
+    document.body.style.background = hexNumber;
 }
