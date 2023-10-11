@@ -27,7 +27,7 @@ function openVothcom()
     window.open("","Display window","toolbar=no,directories=no,menubar=no");
 }
 
-function clear ()
+function clear (form)
 {
     form.input.value = 0;
     form.display.value = 0;
