@@ -32,6 +32,7 @@ function clear (form)
     form.input.value = 0;
     form.display.value = 0;
     decimal = 0;
+    computed = false; 
 }
 
 function changeBackground(hexNumber)
