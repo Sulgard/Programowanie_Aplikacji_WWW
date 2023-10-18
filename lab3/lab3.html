@@ -4,6 +4,7 @@
         <link rel="stylesheet" href="styles.css">
         <link href="https://fonts.cdnfonts.com/css/diablo" rel="stylesheet">
         <script src="kolorujtlo.js" type="text/javascript"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <meta http-equiv="Content-type" content="text/html; charset=UTF-8"/>
         <meta http-equiv="Content-Language" content="pl" />
         <meta name="Author" content="Artur Sutuła" />
@@ -32,5 +33,40 @@
                 });
             
             </script>
+        
+        <div id="animacjaTestowa2" class="test-block">
+            Najedź kursorem, a się powiększe
+        </div>
+
+        <script>
+            $("animacjaTestowa2").on({
+                "mouseover" : function() {
+                    $(this).animate({
+                        width: 300
+                    }, 800);
+                },
+                "mouseout" : function() {
+                    $(this).animate({
+                        width: 200
+                    }, 800);
+                }
+            });
+        </script>
+
+        <div id="animacjaTestowa3" class="test-block">
+            Klikaj, abym urósł
+        </div>
+        <script>
+            $("#animacjaTestowa3").on("click", function(){
+                if(!$(this).is(":animated")) {
+                    $(this).animate({
+                        width: "+=" + 50,
+                        height: "+=" + 10,
+                        opacity: "-=" + 0.1,
+                        duration: 3000
+                    });
+                }
+            });
+        </script>
     </body>
 </html>
