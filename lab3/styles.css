@@ -1,0 +1,81 @@
+body{
+    background-color: black;
+    font-family: 'Diablo', sans-serif;
+    color: white;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li{
+    float: left;
+}
+
+li a{
+    display: block;
+    padding: 14px 16px;
+    color: white;
+    text-decoration: none;
+
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.standard{
+    width: 50vw;
+    height: 20vh;
+    background-color: #222020;
+    border: white;
+
+}
+
+.klasa{
+    width: 310px;
+    height: 430px;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+  }
+  
+  input[type=submit] {
+    background-color: #8d0e0e;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: rgb(184, 17, 17);
+  }
+  
+  .formularz {
+    border-radius: 5px;
+    background-color: #504c4cfd;
+    padding: 20px;
+  }
+
+  .quest{
+    float: left;
+  }
+  .tlo
+  {
+    height: 300px;
+    width: 400px;
+  }
