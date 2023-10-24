@@ -7,13 +7,15 @@ body{
 
 .navbar{
   font-family: 'Diablo', sans-serif;
+
 }
 .navbar ul{
+  border-radius: 1rem;
   position: fixed;
   list-style-type: none;
   margin: 0;
   z-index: 100;
-  width: 100vw;
+  width: 98vw;
   height: 8vh;
   padding: 0;
   overflow: hidden;
@@ -132,4 +134,24 @@ input[type=text], select, textarea {
 
 .quests-icons{
   float:right;
+}
+
+.navbar ul li ul.dropdown li{
+  display: block;
+}
+
+.navbar ul li ul.dropdown{
+  width: 100%;
+  background: black;
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+
+.navbar ul li a:hover{
+  background: #111;
+}
+
+.navbar ul li :hover.dropdown{
+  display:block;
 }
