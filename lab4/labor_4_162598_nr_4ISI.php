@@ -59,5 +59,22 @@
     for ($j = 0; $j <= 10; $j++) {
         echo "Numer: $j <br/>";
       }
+    
+      echo 'Zasotoswanie $_GET, $_POST, $_SESSION <br/>';
+      echo 'Trzeba dodac w adresie strony ?name=Artur <br/>';
+      echo 'Hello ' . htmlspecialchars($_GET["name"]) . '!';
+      echo 'Tutaj trzeba uzyc np guzika<br/>';
+      echo 'Hello ' . htmlspecialchars($_POST["name"]) . '!';
+
+      session_start();
+
+    /*session is started if you don't write this line can't use $_Session  global variable*/
+
+    
+
+	$_SESSION["favcolor"] = "green";
+	$_SESSION["favanimal"] = "cat";
+	echo "Session variables are set.";	
+      
 ?>
 
