@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.cdnfonts.com/css/diablo" rel="stylesheet">
+        <script src="kolorujtlo.js" type="text/javascript"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <meta http-equiv="Content-type" content="text/html; charset=UTF-8"/>
+        <meta http-equiv="Content-Language" content="pl" />
+        <meta name="Author" content="Artur Sutuła" />
+        <title>Poradnik do gry</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Menu</a></li>
+                    <li><a href="klasy.html">Klasy</a></li>
+                    <li><a href="kroki.html">Pierwsze Kroki</a></li>
+                    <li><a href="fabuła.html">Fabuła</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li><a href="jstest.html">testJs</a></li>
+                    <li><a href="jstest2.html">testJS2</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <div id="animacjaTestowa1" class="test-block">Kliknij, a się powiększe</div>
+            <script>
+                $("#animacjaTestowa1").on("click", function(){
+                    $(this).animate({
+                        width: "500px",
+                        opacity: 0.4,
+                        fontsize: "3em",
+                        borderwidth: "10px"
+                    }, 1500);
+                });
+            
+            </script>
+        
+        <div id="animacjaTestowa2" class="test-block">
+            Najedź kursorem, a się powiększe
+        </div>
+
+        <script>
+            $("animacjaTestowa2").on({
+                "mouseover" : function() {
+                    $(this).animate({
+                        width: 300
+                    }, 800);
+                },
+                "mouseout" : function() {
+                    $(this).animate({
+                        width: 200
+                    }, 800);
+                }
+            });
+        </script>
+
+        <div id="animacjaTestowa3" class="test-block">
+            Klikaj, abym urósł
+        </div>
+        <script>
+            $("#animacjaTestowa3").on("click", function(){
+                if(!$(this).is(":animated")) {
+                    $(this).animate({
+                        width: "+=" + 50,
+                        height: "+=" + 10,
+                        opacity: "-=" + 0.1,
+                        duration: 3000
+                    });
+                }
+            });
+        </script>
+    </body>
+</html>
