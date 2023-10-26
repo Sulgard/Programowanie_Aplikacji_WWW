@@ -5,49 +5,56 @@ body{
   color: white;
 }
 
-header{
-  background-color: #222020;
-  width: 98vw;
-  height: 8vh;
-  margin: 0;
+header ul{
+  list-style: none;
+  background: #333;
   padding: 0;
-  border-radius: 1rem;
-  overflow: hidden;
-  z-index: 100;
-  position: fixed;
+  margin: 0;
+  width: 98vw;
   font-family: 'Diablo', sans-serif;
-  color: white;
+  position: fixed;
 }
 
-.navbar ul{
-  list-style-type: none;
+header ul li{
+  display: inline-block;
+  position: relative;
 }
 
-.navbar li{
-  float: left;
-}
-
-.navbar li a{
+header ul li a{
   display: block;
-  padding: 14px 16px;
-  text-decoration: none;
+  padding: 20px 25px;
   color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
 }
 
-.navbar li a:hover {
-  background-color: #111;
+header ul li ul.dropdown li{
+  display: block;
 }
+
+header ul li ul.dropdown{
+  width: 100%;
+  background:#222020;
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+
+header ul li a:hover{
+  background:#ccc;
+}
+
+header ul li:hover ul.dropdown{
+  display: block;
+}
+
 
 .standard{
   width: 50vw;
   height: 20vh;
   background-color: #222020;
   border: white;
-}
-
-.klasa{
-  width: 310px;
-  height: 430px;
 }
 
 input[type=text], select, textarea {
@@ -110,7 +117,7 @@ input[type=submit]:hover {
   max-width: 80vw; /* Szerokość kontenera */
   margin: 0 auto; /* Wyśrodkowanie kontenera */
   padding: 20px; /* Marginesy wewnętrzne kontenera */
-  background-color: rgb(44, 42, 42); /* Tło kontenera */
+  background-color: #222020;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Cień kontenera */
   padding-top: 9vh;
 }
@@ -121,7 +128,7 @@ input[type=submit]:hover {
 
 .content h1,h2,h3{
   font-family: 'Diablo', sans-serif;
-  color: #dd6b0d;
+  color: #D65A31;
 }
 
 .content li a{

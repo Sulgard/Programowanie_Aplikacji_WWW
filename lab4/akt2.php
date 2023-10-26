@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<?php require('./view/head.php'); ?> 
+<?php require('./view/head.php'); ?>
     <body>
         <?php include('./view/header.php'); ?>
         <div class="container">
@@ -138,10 +138,8 @@
                 <i>...To, co cię nie zabije, sprawia, że stajesz się silniejszy.</i>
 
                 <h1>Akt 1: Szczegóły Siedlisko Zła</h1>   
-                <p>Siedlisko Zła to pierwsze zadanie, które napotykasz, i jest dość proste do ukończenia, a nagroda za nie jest świetna. Zadanie to jest dostarczane przez Akarę.
+                <p>Siedlisko Zła to pierwsze zadanie, które napotykasz, i jest dość proste do ukończenia, a nagroda za nie jest świetna. Zadanie to jest dostarczane przez Akarę.</p>
                 <img class="quests-icons" src="./images/Act1Q3.png">
-                </p>
-                
                 <ul>
                     <li>Nazwa zadania: Siedlisko Zła</li>
                     <li>Akt: Akt I</li>
@@ -204,10 +202,8 @@
                 <i>...To, co cię nie zabije, sprawia, że stajesz się silniejszy.</i>
 
                 <h1>Akt 1: Szczegóły Siedlisko Zła</h1>   
-                <p>Siedlisko Zła to pierwsze zadanie, które napotykasz, i jest dość proste do ukończenia, a nagroda za nie jest świetna. Zadanie to jest dostarczane przez Akarę.
+                <p>Siedlisko Zła to pierwsze zadanie, które napotykasz, i jest dość proste do ukończenia, a nagroda za nie jest świetna. Zadanie to jest dostarczane przez Akarę.</p>
                 <img class="quests-icons" src="./images/Act1Q4.png">
-                </p>
-                
                 <ul>
                     <li>Nazwa zadania: Siedlisko Zła</li>
                     <li>Akt: Akt I</li>
@@ -270,10 +266,8 @@
                 <i>...To, co cię nie zabije, sprawia, że stajesz się silniejszy.</i>
 
                 <h1>Akt 1: Szczegóły Siedlisko Zła</h1>   
-                <p>Siedlisko Zła to pierwsze zadanie, które napotykasz, i jest dość proste do ukończenia, a nagroda za nie jest świetna. Zadanie to jest dostarczane przez Akarę.
+                <p>Siedlisko Zła to pierwsze zadanie, które napotykasz, i jest dość proste do ukończenia, a nagroda za nie jest świetna. Zadanie to jest dostarczane przez Akarę.</p>
                 <img class="quests-icons" src="./images/Act1Q5.png">
-                </p>
-                
                 <ul>
                     <li>Nazwa zadania: Siedlisko Zła</li>
                     <li>Akt: Akt I</li>
@@ -336,10 +330,8 @@
                 <i>...To, co cię nie zabije, sprawia, że stajesz się silniejszy.</i>
 
                 <h1>Akt 1: Szczegóły Siedlisko Zła</h1>   
-                <p>Siedlisko Zła to pierwsze zadanie, które napotykasz, i jest dość proste do ukończenia, a nagroda za nie jest świetna. Zadanie to jest dostarczane przez Akarę.
+                <p>Siedlisko Zła to pierwsze zadanie, które napotykasz, i jest dość proste do ukończenia, a nagroda za nie jest świetna. Zadanie to jest dostarczane przez Akarę.</p>
                 <img class="quests-icons" src="./images/Act1Q6.png">
-                </p>
-                
                 <ul>
                     <li>Nazwa zadania: Siedlisko Zła</li>
                     <li>Akt: Akt I</li>

@@ -1,13 +1,6 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="./css/styles.css">
-        <link href="https://fonts.cdnfonts.com/css/diablo" rel="stylesheet">
-        <meta http-equiv="Content-type" content="text/html; charset=UTF-8"/>
-        <meta http-equiv="Content-Language" content="pl" />
-        <meta name="Author" content="Artur Sutuła" />
-        <title>Poradnik do gry</title>
-    </head>
+    <?php require('./view/head.php'); ?>
     <body>
         <?php include('./view/header.php'); ?>         
         <h2>Wprowadzenie</h2>
