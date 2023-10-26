@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="./css/styles.css">
         <link href="https://fonts.cdnfonts.com/css/diablo" rel="stylesheet">
         <meta http-equiv="Content-type" content="text/html; charset=UTF-8"/>
         <meta http-equiv="Content-Language" content="pl" />
@@ -9,24 +9,12 @@
         <title>Poradnik do gry</title>
     </head>
     <body>
-        <header>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="index.html">Menu</a></li>
-                    <li><a href="html/klasy.html">Klasy</a></li>
-                    <li><a href="html/kroki.html">Pierwsze Kroki</a></li>
-                    <li><a href="html/fabuła.html">Fabuła</a></li>
-                    <li><a href="html/kontakt.html">Kontakt</a></li>
-                    <li><a href="html/jstest.html">testJs</a></li>
-                    <li><a href="html/jstest2.html">testJS2</a></li>
-                </ul>
-            </nav>
-        </header>
+        <?php include('./view/header.php'); ?>         
         <h2>Wprowadzenie</h2>
         <table class="standard">
             <tr>
                 <td>
-                    <img class="tlo" src="img/tomb.png" alt="tommb">
+                    <img class="tlo" src="images/tomb.png" alt="tommb">
                 </td>
                 <td>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
@@ -40,7 +28,7 @@
         <table class="standard">
             <tr>
                 <td>
-                    <img class="tlo" src="img/andariel.png" alt="tommb">
+                    <img class="tlo" src="images/andariel.png" alt="tommb">
                 </td>
                 <td>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, 

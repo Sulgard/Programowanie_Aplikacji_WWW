@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="./css/styles.css">
         <link href="https://fonts.cdnfonts.com/css/diablo" rel="stylesheet">
         <meta http-equiv="Content-type" content="text/html; charset=UTF-8"/>
         <meta http-equiv="Content-Language" content="pl" />
@@ -9,25 +9,12 @@
         <title>Poradnik do gry</title>
     </head>
     <body>
-        <header>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="../index.html">Menu</a></li>
-                    <li><a href="klasy.html">Klasy</a></li>
-                    <li><a href="kroki.html">Pierwsze Kroki</a></li>
-                    <li><a href="fabuła.html">Fabuła</a></li>
-                    <li><a href="kontakt.html">Kontakt</a></li>
-                    <li><a href="jstest.html">testJs</a></li>
-                    <li><a href="jstest2.html">testJS2</a></li>
-                </ul>
-            </nav>
-        </header>
-        
+        <?php include('./view/header.php'); ?>
         <div class="container">
             <div class="content">
                 <h1>Akt 1: Szczegóły Siedlisko Zła</h1>   
                 <p>Siedlisko Zła to pierwsze zadanie, które napotykasz, i jest dość proste do ukończenia, a nagroda za nie jest świetna. Zadanie to jest dostarczane przez Akarę.</p>
-                <img class="quests-icons" src="../images/Act1Q1.png">
+                <img class="quests-icons" src="./images/Act1Q1.png">
                 <ul>
                     <li>Nazwa zadania: Siedlisko Zła</li>
                     <li>Akt: Akt I</li>
@@ -91,7 +78,7 @@
 
                 <h1>Akt 1: Szczegóły Siedlisko Zła</h1>   
                 <p>Siedlisko Zła to pierwsze zadanie, które napotykasz, i jest dość proste do ukończenia, a nagroda za nie jest świetna. Zadanie to jest dostarczane przez Akarę.</p>
-                <img class="quests-icons" src="../images/Act1Q2.png">
+                <img class="quests-icons" src="./images/Act1Q2.png">
                 <ul>
                     <li>Nazwa zadania: Siedlisko Zła</li>
                     <li>Akt: Akt I</li>
@@ -155,7 +142,7 @@
 
                 <h1>Akt 1: Szczegóły Siedlisko Zła</h1>   
                 <p>Siedlisko Zła to pierwsze zadanie, które napotykasz, i jest dość proste do ukończenia, a nagroda za nie jest świetna. Zadanie to jest dostarczane przez Akarę.</p>
-                <img class="quests-icons" src="../images/Act1Q3.png">
+                <img class="quests-icons" src="./images/Act1Q3.png">
                 <ul>
                     <li>Nazwa zadania: Siedlisko Zła</li>
                     <li>Akt: Akt I</li>
@@ -219,7 +206,7 @@
 
                 <h1>Akt 1: Szczegóły Siedlisko Zła</h1>   
                 <p>Siedlisko Zła to pierwsze zadanie, które napotykasz, i jest dość proste do ukończenia, a nagroda za nie jest świetna. Zadanie to jest dostarczane przez Akarę.</p>
-                <img class="quests-icons" src="../images/Act1Q4.png">
+                <img class="quests-icons" src="./images/Act1Q4.png">
                 <ul>
                     <li>Nazwa zadania: Siedlisko Zła</li>
                     <li>Akt: Akt I</li>
@@ -283,7 +270,7 @@
 
                 <h1>Akt 1: Szczegóły Siedlisko Zła</h1>   
                 <p>Siedlisko Zła to pierwsze zadanie, które napotykasz, i jest dość proste do ukończenia, a nagroda za nie jest świetna. Zadanie to jest dostarczane przez Akarę.</p>
-                <img class="quests-icons" src="../images/Act1Q5.png">
+                <img class="quests-icons" src="./images/Act1Q5.png">
                 <ul>
                     <li>Nazwa zadania: Siedlisko Zła</li>
                     <li>Akt: Akt I</li>
@@ -347,7 +334,7 @@
 
                 <h1>Akt 1: Szczegóły Siedlisko Zła</h1>   
                 <p>Siedlisko Zła to pierwsze zadanie, które napotykasz, i jest dość proste do ukończenia, a nagroda za nie jest świetna. Zadanie to jest dostarczane przez Akarę.</p>
-                <img class="quests-icons" src="../images/Act1Q6.png">
+                <img class="quests-icons" src="./images/Act1Q6.png">
                 <ul>
                     <li>Nazwa zadania: Siedlisko Zła</li>
                     <li>Akt: Akt I</li>
