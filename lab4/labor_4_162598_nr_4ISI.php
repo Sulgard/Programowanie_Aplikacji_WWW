@@ -1,4 +1,11 @@
-<?php
+<!DOCTYPE html>
+<html>
+    <?php require('./view/head.php'); ?>
+    <body>
+    <?php include('./view/header.php'); ?>  
+    <div class="container">
+            <div class="content">       
+        <?php
     $nr_indeksu = '123456';
     $nr_grupy = '4';
 
@@ -64,7 +71,12 @@
       echo 'Trzeba dodac w adresie strony ?name=Artur <br/>';
       echo 'Hello ' . htmlspecialchars($_GET["name"]) . '!';
       echo 'Tutaj trzeba uzyc np guzika<br/>';
-      echo 'Hello ' . htmlspecialchars($_POST["name"]) . '!';
+      
+    <form method="post" action="process.php">
+        Imię: <input type="text" name="name"><br>
+        Wiek: <input type="text" name="age"><br>
+        <input type="submit" value="Prześlij">
+    </form> 
 
       session_start();
 
@@ -77,4 +89,7 @@
 	echo "Session variables are set.";	
       
 ?>
-
+        </div>
+    </div>
+    </body>
+</html>
