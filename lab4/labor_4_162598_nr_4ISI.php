@@ -72,23 +72,19 @@
       echo 'Hello ' . htmlspecialchars($_GET["name"]) . '!';
       echo 'Tutaj trzeba uzyc np guzika<br/>';
       
-    <form method="post" action="process.php">
-        Imię: <input type="text" name="name"><br>
-        Wiek: <input type="text" name="age"><br>
-        <input type="submit" value="Prześlij">
-    </form> 
-
-      session_start();
-
-    /*session is started if you don't write this line can't use $_Session  global variable*/
-
-    
+      session_start();  
 
 	$_SESSION["favcolor"] = "green";
 	$_SESSION["favanimal"] = "cat";
 	echo "Session variables are set.";	
       
-?>
+    ?>
+    <form method="post" action="process.php">
+        Imię: <input type="text" name="name"><br>
+        Wiek: <input type="text" name="age"><br>
+        <input type="submit" value="Prześlij">
+    </form> 
+    <p><a href='process.php'>Link do sprawdzenia</a></p>
         </div>
     </div>
     </body>
