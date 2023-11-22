@@ -1,24 +1,13 @@
 <?php
+// Załącz plik z funkcją PokazPodstrone
+include('showpagetest.php');
 
-function PokazPodstrone($id)
-{
-    //czyscimy $id, aby przez GET ktoś nie próbował wykonać ataku SQL INJECTION
-    $id_clear = htmlspecialchars($id);
+// Pobierz identyfikator strony z parametru GET
+$id = isset($_GET['id']) ? $_GET['id'] : 0;
 
-    // Zabezpieczenie przed atakami SQL Injection
-    $id_clear = mysqli_real_escape_string($conn, $id_clear);
+// Wywołaj funkcję PokazPodstrone i wyświetl treść strony
+$trescStrony = PokazPodstrone($id);
 
-    $query = "SELECT * FROM page_list WHERE id='$id_clear' LIMIT 1";
-    $result = mysqli_query($conn, $query);
-    $row = mysqli_fetch_array($result);
-
-    //wywołanie strony z bazy
-    if (empty($row['id'])) {
-        $web = '[nie_znaleziono_strony]';
-    } else {
-        $web = $row['page_content'];
-    }
-
-    return $web;
-}
+// Wyświetl treść strony
+echo $trescStrony;
 ?>
