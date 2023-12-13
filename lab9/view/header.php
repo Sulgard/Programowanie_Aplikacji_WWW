@@ -1,6 +1,8 @@
 <header>
     <ul>
+         <!-- Menu główne -->
         <li><a href="index.php">Menu</a></li>
+        <!-- Sekcja "Klasy" z rozwijanym podmenu -->
         <li>
             <a href="#">Klasy</a>
             <ul class="dropdown">
@@ -13,6 +15,7 @@
                 <li><a href="Nekromanta.php">Nekromanta</a></li>
             </ul>
         </li>
+         <!-- Sekcja "Fabuła" z rozwijanym podmenu -->
         <li>
             <a href="#">Fabuła</a>
             <ul class="dropdown">
@@ -23,6 +26,7 @@
                 <li><a href="akt5.php">Akt V</a></li>
             </ul>
         </li>
+        <!-- Sekcja "Laby" z rozwijanym podmenu -->
         <li>
             <a href="#">Laby</a>
             <ul class="dropdown">
@@ -31,6 +35,7 @@
                 <li><a href="labor_4_162598_nr_4ISI.php">Lab4</a></li>
             </ul>
         </li>
+        <!-- Pozostałe odnośniki w menu -->
         <li><a href="kontakt.php">Kontakt</a></li>
         <li><a href="./admin/admin.php">Admin</a></li>
         </ul>
