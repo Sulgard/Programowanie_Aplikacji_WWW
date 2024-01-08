@@ -1,0 +1,174 @@
+body{
+  background-image: url(../images/marble.jpg);
+  background-repeat: repeat;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+header {
+  background-color: #333;
+  font-family: 'Diablo', sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: inline-block;
+  margin-right: 20px; /* Odstęp między elementami */
+}
+
+a {
+  text-decoration: none;
+  color: white; /* Kolor tekstu linków */
+  font-weight: bold;
+  padding: 25px; /* Wielkość obszaru klikalnego linku */
+  display: block;
+}
+
+a:hover {
+  background-color: #555; /* Kolor tła linku po najechaniu myszką */
+}
+
+/* Stylizacja dla rozwijanych podmenu */
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: #444; /* Kolor tła rozwijanego menu */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+li:hover .dropdown {
+  display: block;
+}
+
+.dropdown li {
+  display: block;
+}
+
+
+.standard{
+  width: 50vw;
+  height: 20vh;
+  background-color: #222020;
+  border: white;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px; 
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical
+}
+  
+input[type=submit] {
+  background-color: #8d0e0e;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+  
+input[type=submit]:hover {
+  background-color: rgb(184, 17, 17);
+}
+  
+.formularz {
+  border-radius: 5px;
+  background-color: #504c4cfd;
+  padding: 20px;
+}
+
+.quest{
+  float: left;
+}
+.tlo
+{
+  height: 300px;
+  width: 400px;
+}
+
+.test-block{
+  width:200px;
+  border:2px solid rgba(71,236,30,1);
+  background: rgba(71,236,30,0.7);
+  text-align: center;
+  color: #000;
+  padding:20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.container {
+  max-width: 80vw; /* Szerokość kontenera */
+  margin: 0 auto; /* Wyśrodkowanie kontenera */
+  padding: 20px; /* Marginesy wewnętrzne kontenera */
+  background-color: #222020;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Cień kontenera */
+  padding-top: 9vh;
+}
+
+.content {
+    padding: 10px; /* Marginesy wewnętrzne zawartości */
+}
+
+
+.content h1,h2,h3{
+  font-family: 'Diablo', sans-serif;
+  color: #D65A31;
+}
+
+.content li a{
+  display: block;
+  padding: 14px 16px;
+  color: white;
+  text-decoration: none;
+}
+
+.content h2{
+  clear: left;
+}
+
+.quests-icons{
+  float:right;
+}
+
+.class-icons{
+  float:left;
+  margin-right: 20px;
+  width: 310px;
+  height: 430px;
+}
+
+footer {
+  text-align: center;
+}
+
+.class-stats {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #333;
+}

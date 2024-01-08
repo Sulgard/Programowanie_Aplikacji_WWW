@@ -1,0 +1,44 @@
+/* style.css (lub inny plik stylów) */
+
+header {
+    background-color: #333; /* Kolor tła paska nawigacyjnego */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: inline-block;
+    margin-right: 20px; /* Odstęp między elementami */
+}
+
+a {
+    text-decoration: none;
+    color: white; /* Kolor tekstu linków */
+    font-weight: bold;
+    padding: 10px; /* Wielkość obszaru klikalnego linku */
+    display: block;
+}
+
+a:hover {
+    background-color: #555; /* Kolor tła linku po najechaniu myszką */
+}
+
+/* Stylizacja dla rozwijanych podmenu */
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #444; /* Kolor tła rozwijanego menu */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+li:hover .dropdown {
+    display: block;
+}
+
+.dropdown li {
+    display: block;
+}
