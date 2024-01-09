@@ -1,4 +1,16 @@
-        
+<?php
+error_reporting(E_ALL ^ E_NOTICE ^ E_WARNING);
+
+if ($_GET['idp'] == '') {
+    $strona = 'index.php';
+} elseif ($_GET['idp'] == 'kontakt') {
+    $strona = 'kontakt.php';
+} elseif ($_GET['idp'] == 'filmy') {
+    $strona = 'filmy.php';
+} else {
+    $strona = 'html/404.html';
+}
+?>     
 <?php include('./view/header.php'); ?>        
         <h2>Wprowadzenie</h2>
         <table class="standard">

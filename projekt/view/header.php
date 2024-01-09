@@ -46,6 +46,8 @@
                         </li>
                         <li><a href="kontakt.php">Kontakt</a></li>
                         </ul>
+                        <li><a href="filmy.php">Filmy</a></li>
+                        </ul>
                 </header>
                     <div class="container">
                         <div class="content">

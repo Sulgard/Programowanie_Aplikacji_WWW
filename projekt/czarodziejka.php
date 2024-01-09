@@ -1,6 +1,4 @@
 <?php include('./view/header.php'); ?>  
-        <div class="container">
-            <div class="content">
                 <h1>Czarodziejka</h1>
                 Amazonka jest jedną z siedmiu klas dostępnych w Diablo II. Jest mistrzynią oszczepu, łuku i kuszy, reaguje na sytuacje bojowe z nadludzką zręcznością. Opiera się na na zdolnościach magicznych, które wspomagają jej zdolności bojowe.
                 <h1>Lore</h1> 
