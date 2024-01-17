@@ -1,41 +1,35 @@
-<?php include('./view/header.php'); ?>  
 <?php
-// Połączenie z bazą danych (przykładowe dane - dostosuj do własnych ustawień)
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "moja_strona";
+function ShowPage($id)
+{
+    global $conn; // Używamy zmiennej globalnej $conn
 
-// Utworzenie połączenia
-$conn = new mysqli($servername, $username, $password, $dbname);
+    //czyscimy $id, aby przez GET ktos nie probowal wykonac ataku SQL INJECTION
+    $id_clear = htmlspecialchars($id);
 
-// Sprawdzenie połączenia
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+    // Przygotowanie zapytania SQL
+    $stmt = $conn->prepare("SELECT * FROM page_list WHERE id=? LIMIT 1"); // Używamy znaku zastępczego ?
+    $stmt->bind_param("s", $id_clear); // Przypisujemy wartość do znaku zastępczego
 
-// Bezpieczne pobranie wartości z parametrów GET
-$id = isset($_GET['id']) ? intval($_GET['id']) : 0;
+    // Wykonanie zapytania
+    $stmt->execute();
 
-// Zabezpieczenie przed SQL injection
-$id = $conn->real_escape_string($id);
+    // Pobranie wyników
+    $result = $stmt->get_result();
+    $row = $result->fetch_assoc();
 
-// Zapytanie SQL z warunkiem
-$sql = "SELECT * FROM page_list WHERE id = $id LIMIT 1";
-
-$result = $conn->query($sql);
-
-if ($result->num_rows > 0) {
-    // Wyświetlenie danych
-    while ($row = $result->fetch_assoc()) {
-        echo "<h1>" . $row["page_title"] . "</h1>";
-        echo "<p>" . $row["page_content"] . "</p>";
+    //wywolywanie strony z bazy
+    if(empty($row['id']))
+    {
+        $web = '[nie_znaleziono_strony]';
     }
-} else {
-    echo "Brak wyników";
-}
+    else
+    {
+        $web = $row['page_content'];
+    }
 
-// Zamknięcie połączenia
-$conn->close();
+    // Zamknięcie zapytania
+    $stmt->close();
+
+    return $web;
+}
 ?>
-<?php include('./view/footer.php'); ?>  

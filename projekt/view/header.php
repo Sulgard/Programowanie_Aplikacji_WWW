@@ -51,3 +51,7 @@
                 </header>
                     <div class="container">
                         <div class="content">
+                        <?php include('./showpage.php'); ?>
+                        if ($_GET['idp'] == 'main') {
+                         echo ShowPage(1);
+                        }
